@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body style="background-color: #f4f4f9;">
+    <!-- MODALS -->
+    <div class="modal" id="WelcomeModal" tabindex="-1" aria-labelledby="WelcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="WelcomeModalLabel">Welcome To ChoiceSub!</h5>
+                    <button type="button" class="btn-close" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    Kindle Download Our App
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Download App</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <!-- sidebar -->
+                <div class="sidebar bg-dark">
+                    <ul>
+                        <h3>
+                            <a href="" class="underline"> <img class="logo" src="img/logo.jpg" alt="" width="14%">&nbsp;CHOICE SUB</a>
+                        </h3>
+                        <!-- <hr> -->
+                        <li>
+                            <a href="#sidebar">
+                                <p class="fw-bold bg-blue" style="font: 18px raleway,sans-serif;">
+                                    <span class="bi bi-house"></span> Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sidebar">
+                                <p class="fw-bold" style="font: 18px raleway,sans-serif;">
+                                    <span class="bi bi-gear"></span> settings
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sidebar">
+                                <p class="fw-bold" style="font: 18px raleway,sans-serif;">
+                                    <span class="bi bi-printer"></span> Print Pins
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sidebar">
+                                <p class="fw-bold" style="font: 18px raleway,sans-serif;">
+                                    <span class="bi bi-arrow-repeat"></span> Reprint Pins
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mymodal" data-bs-target="#reg-modal" data-bs-toggle="modal">
+                                <p class="fw-bold" style="font: 18px raleway,sans-serif;">
+                                    <span class="bi bi-power"></span> Logout
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-10">
+                <!-- navbar -->
+                <div class="navbar navbar-expand-lg navbar-light fixed-top shadow bg-light">
+                    <div class="container">
+                        <a href="#" class="navbar-brand fw-bold">Dashboard</a>
+                        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse-content">
+                            <span class="navbar-toggler-icon"></span>
+                        </div>
+                        <div class="navbar-collapse collapse" id="collapse-content">
+                            <ul class="navbar-nav  ms-auto">
+                                <li class="nav-item">
+                                    <a href="#sidebar" class="nav-link"><span class="bi bi-house"></span> Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#sidebar" class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar"><span class="bi bi-gear "></span> Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#sidebar" class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar"><span class="bi bi-printer"></span> Reprint Pins</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#mymodal" data-bs-target="#reg-modal" data-bs-toggle="modal" class="nav-link "><span class="bi bi-power"></span>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Bootsrap-->
+                <div class="modal" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-title">You are about to Logout <br>Do you want to continue</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                                <button class="btn btn-primary">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container my-5 ">
+                    <h2 style="margin-top: 100px; " class="fw-bold ">
+                        Hi, Adeyelu Peter
+                        <span class="wave ">👋</span>
+                    </h2>
+                    <i style="color: #6c757d; font-size: 18px; ">
+                    ...Rule your world
+                    </i>
+                </div>
+
+                <div class="container">
+                    <div class="row ">
+                        <div class="card ">
+                            <div class="card-body ">
+                                <div class="container ">
+                                    <div class="alert alert-info "><span class="bi bi-exclamation-circle-fill "></span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, excepturi?
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-4 mb-3 ">
+                                            <div class="card ">
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center justify-content-between ">
+                                                        <div>
+                                                            <p style="color: #6c757d; font-size: 20px; " class="fw-bold ">Wallet Balance</p>
+
+                                                            <p style="color: #212529; font-size: 25px; " class="fw-bold ">₦50.00</p>
+
+                                                            <p>
+                                                                <a style="color: #000088; font-size: 17px; " href=" # " class="text-decoration-none "><span class=" bi bi-arrow-down-right-circle "style="font-size: 25px; "></span> Fund Wallet</a>
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <span style="color: #212529; " class=" bi bi-chevron-right "></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 ">
+                                            <div class="card ">
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center justify-content-between ">
+                                                        <div>
+                                                            <p style="color: #6c757d; font-size: 20px; " class="fw-bold ">Commission</p>
+
+                                                            <p style="color: #212529; font-size: 25px; " class="fw-bold ">₦40.00</p>
+
+                                                            <p>
+                                                                <a style="color: #000088; font-size: 17px; " href="# " class="text-decoration-none "><span class="bi bi-arrow-up-right-circle " style="font-size: 25px; "></span> Withdraw</a>
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <span style="color: #212529; " class=" bi bi-chevron-right "></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3 ">
+                                            <div class="card ">
+                                                <div class="card-body ">
+                                                    <div class="d-flex align-items-center justify-content-between ">
+                                                        <div>
+                                                            <p style="color: #6c757d; font-size: 20px; " class="fw-bold ">Today's Transactions</p>
+
+                                                            <p style="color: #212529; font-size: 25px; " class="fw-bold ">₦70.00</p>
+
+                                                            <p>
+                                                                <a style="color: #000088; font-size: 17px; " href="# " class="text-decoration-none "><span class=" bi bi-box-arrow-up-right " style="font-size: 25px; "></span> View Transactions</a>
+                                                            </p>
+                                                        </div>
+                                                        <div>
+                                                            <span style="color: #212529; " class=" bi bi-chevron-right "></span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-2">
+                    <div class="row row-2 mt-3">
+                        <div class="col-lg-3 col-6">
+                            <div class="card card-2">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar1" role="button" aria-controls="sidebar" style="color: #212529; font-size: 20px;" class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; " class="bi bi-router-fill"></span> Buy Data</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="card card-2">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar2" role="button" aria-controls="sidebar" style="color: #212529; font-size: 19px; " class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; " class=" bi bi-phone-fill"></span> Buy Airtime</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 mg">
+                            <div class="card card-2">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar3" role="button" aria-controls="sidebar" style="color: #212529; font-size: 20px; " class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; "class="bi bi-postcard-fill "></span> Print Cards</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-3 mg">
+                            <div class="card card-2">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar4" role="button" aria-controls="sidebar-4" style="color: #212529; font-size: 20px; " class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; " class="bi bi-lightning-charge-fill "></span> Electricty</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-3 mb-3">
+                        <div class="col-lg-3 col-6 mb-3">
+                            <div class="card card-3">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar5" role="button" aria-controls="sidebar" style="color: #212529; font-size: 20px;" class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; " class="bi bi-tv-fill"></span> TV Sub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-3 ">
+                            <div class="card card-3">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar6" role="button" aria-controls="sidebar" style="color: #212529; font-size: 19px; " class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; " class=" bi bi-keyboard-fill"></span> Pin Status</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-3 ">
+                            <div class="card card-3">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar7" role="button" aria-controls="sidebar-3" style="color: #212529; font-size: 20px; " class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; "class="bi bi-wallet-fill"></span> Fund Wallet</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-3">
+                            <div class="card card-3">
+                                <div class="card-body">
+                                    <a href="#sidebar" data-bs-toggle="offcanvas" data-bs-target="#sidebar8" role="button" aria-controls="sidebar-4" style="color: #212529; font-size: 20px; " class="fw-bold text-decoration-none text-nowrap"><span style="color: #000088; " class="bi bi-window-stack"></span> Others</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR-1 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar1" aria-labelledby="sidebar1-label">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-uppercase" id="sidebar1-label" style="color: #000088; ">Buy Data</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="alert alert-info">
+                <span class="spinner-grow spinner-grow-sm"></span> | MTN | AIRTEL | GLO | 9MOBILE
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label for=" tel" class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel ">
+                        <label for="network" class="form-label fw-bold mt-2" style="font-size: 18px;">Network:</label>
+                        <br>
+                        <!-- <input class="form-control " type="tel " id="network" placeholder="Network"> -->
+                        <select class="form-subject" id="networks">
+                        <option value="Choice Network" selected>Choice Network</option>
+                        <option value="Airtel" selected>Airtel</option>
+                        <option value="MTN" selected>9MOBILE</option>
+                        <option value="GLO" selected>GLO</option>
+                        <option value="9MOBILE" selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px; ">Data Type:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px;">Data Rate:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px;">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar-2 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar2" aria-labelledby="sidebar2-label">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-uppercase" id="sidebar1-label" style="color: #000088; ">Buy Airtime</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="alert alert-info ">
+                <span class="spinner-grow spinner-grow-sm "></span> | MTN | AIRTEL | GLO | 9MOBILE
+            </div>
+            <div class="card ">
+                <div class="card-body">
+                    <form>
+                        <label for=" tel " class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel ">
+                        <label for="network " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Network:</label>
+                        <br>
+                        <!-- <input class="form-control " type="tel " id="network " placeholder="Network "> -->
+                        <select class="form-subject " id="networks ">
+                        <option value="Choice Network " selected>Choice Network</option>
+                        <option value="Airtel " selected>Airtel</option>
+                        <option value="MTN " selected>9MOBILE</option>
+                        <option value="GLO " selected>GLO</option>
+                        <option value="9MOBILE " selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Airtime Amount:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel ">
+                        <!-- <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Data Rate:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel " placeholder="Data Rate "> -->
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px; ">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar-3 -->
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="sidebar3" aria-labelledby="sidebar3-label">
+        <div class="offcanvas-header ">
+            <h3 class="offcanvas-title" id="sidebar-label " style="color: #000088; ">Generate Data Pins</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="alert alert-info ">
+                <span class="spinner-grow spinner-grow-sm "></span>We currently generate MTN, AIRTEL and GLO pins, 9Mobile will soon be available.
+            </div>
+            <div class="card ">
+                <div class="card-body ">
+                    <form>
+                        <!-- <label for=" tel " class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel " placeholder="Phone Number "> -->
+                        <label for="network " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Network:</label>
+                        <br>
+                        <!-- <input class="form-control " type="tel " id="network " placeholder="Network "> -->
+                        <select class="form-subject " id="networks ">
+                        <option value="Choice Network " selected>Choice Network</option>
+                        <option value="Airtel " selected>Airtel</option>
+                        <!-- <option value="MTN " selected>9MOBILE</option> -->
+                        <option value="GLO " selected>GLO</option>
+                        <option value="9MOBILE " selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Data Rate:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel ">
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">How Many Pin?</label>
+                        <input class="form-control py-3 round " type="tel " id="tel ">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px; ">Generate Pins</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar-4 -->
+    <div class="offcanvas offcanvas-end " tabindex="-1 " id="sidebar4" aria-labelledby="sidebar4-label ">
+        <div class="offcanvas-header ">
+            <h3 class="offcanvas-title" id="sidebar-label " style="color: #000088; ">ELECTRICITY PAYMENT</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <div class="card ">
+                <div class="card-body ">
+                    <form>
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Card Number:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel ">
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Distribution:</label>
+                        <!-- <input class="form-control py-3 round " type="tel " id="tel "> -->
+                        <select class="form-subject " id="networks ">
+                            <option value="Abuja Electricity" selected>Abuja Electricity (AEDC)</option>
+                            <option value="Benin Electricity" selected>Benin Electricity (BEDC)</option>
+                            <option value="EKO Electricity" selected>EKO Electricity (EKEDC)</option>
+                            <option value="Enugu Electricity" selected>Enugu Electricity (EEDC)</option>
+                            <option value="Ibadan Electricity" selected>Ibadan Electricity (IBEDC)</option>
+                            <option value="Ikeja Electricty" selected>Ikeja Electricty (IKEDC)</option>
+                            <option value="Jos Electricity" selected>Jos Electricity (JEDC)</option>
+                            <option value="Kaduna Electricity" selected>Kaduna Electricity (KAEDC)</option>
+                            <option value="Kano Electricity" selected>Kano Electricity (KEDCO)</option>
+                            <option value="Port Harcourt Electricity" selected>Port Harcourt Electricity (PHED)</option>
+                            <option value="Yola Electricity" selected>Yola Electricity (YEDC)</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Type:</label>
+                        <br>
+                        <!-- <input class="form-control py-3 round " type="tel " id="tel "> -->
+                        <select class="form-subject " id="networks ">
+                            <option value="Postpaid" selected>Postpaid</option>
+                            <option value="Prepaid" selected>Prepaid</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2 " style="font-size: 18px; ">Amount:</label>
+                        <input class="form-control py-3 round " type="tel " id="tel ">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px; ">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDEBAR-5 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar5" aria-labelledby="sidebar5-label">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-uppercase" id="sidebar1-label" style="color: #000088; ">TV SUBSCRIPTION</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5>Comingup Soon!</h5>
+            <!-- <div class="alert alert-info">
+                <span class="spinner-grow spinner-grow-sm"></span> | MTN | AIRTEL | GLO | 9MOBILE
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label for=" tel" class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel ">
+                        <label for="network" class="form-label fw-bold mt-2" style="font-size: 18px;">Network:</label>
+                        <br>
+                        <select class="form-subject" id="networks">
+                        <option value="Choice Network" selected>Choice Network</option>
+                        <option value="Airtel" selected>Airtel</option>
+                        <option value="MTN" selected>9MOBILE</option>
+                        <option value="GLO" selected>GLO</option>
+                        <option value="9MOBILE" selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px; ">Data Type:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px;">Data Rate:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px;">Place Order</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- SIDEBAR-6 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar6" aria-labelledby="sidebar6-label">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-uppercase" id="sidebar1-label" style="color: #000088; ">Buy Data</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5>Comingup Soon!</h5>
+            <!-- <div class="alert alert-info">
+                <span class="spinner-grow spinner-grow-sm"></span> | MTN | AIRTEL | GLO | 9MOBILE
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label for=" tel" class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel ">
+                        <label for="network" class="form-label fw-bold mt-2" style="font-size: 18px;">Network:</label>
+                        <br>
+                        <select class="form-subject" id="networks">
+                        <option value="Choice Network" selected>Choice Network</option>
+                        <option value="Airtel" selected>Airtel</option>
+                        <option value="MTN" selected>9MOBILE</option>
+                        <option value="GLO" selected>GLO</option>
+                        <option value="9MOBILE" selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px; ">Data Type:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px;">Data Rate:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px;">Place Order</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- SIDEBAR-7 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar7" aria-labelledby="sidebar7-label">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-uppercase" id="sidebar1-label" style="color: #000088; ">Buy Data</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5>Comingup Soon!</h5>
+            <!-- <div class="alert alert-info">
+                <span class="spinner-grow spinner-grow-sm"></span> | MTN | AIRTEL | GLO | 9MOBILE
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label for=" tel" class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel ">
+                        <label for="network" class="form-label fw-bold mt-2" style="font-size: 18px;">Network:</label>
+                        <br>
+                        <select class="form-subject" id="networks">
+                        <option value="Choice Network" selected>Choice Network</option>
+                        <option value="Airtel" selected>Airtel</option>
+                        <option value="MTN" selected>9MOBILE</option>
+                        <option value="GLO" selected>GLO</option>
+                        <option value="9MOBILE" selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px; ">Data Type:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px;">Data Rate:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px;">Place Order</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- SIDEBAR-8 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar8" aria-labelledby="sidebar8-label">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-uppercase" id="sidebar1-label" style="color: #000088; ">Buy Data</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h5>Comingup Soon!</h5>
+            <!-- <div class="alert alert-info">
+                <span class="spinner-grow spinner-grow-sm"></span> | MTN | AIRTEL | GLO | 9MOBILE
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <label for=" tel" class="form-label fw-bold " style="font-size: 18px; ">Phone Number:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel ">
+                        <label for="network" class="form-label fw-bold mt-2" style="font-size: 18px;">Network:</label>
+                        <br>
+                        <select class="form-subject" id="networks">
+                        <option value="Choice Network" selected>Choice Network</option>
+                        <option value="Airtel" selected>Airtel</option>
+                        <option value="MTN" selected>9MOBILE</option>
+                        <option value="GLO" selected>GLO</option>
+                        <option value="9MOBILE" selected>MTN</option>
+                        </select>
+                        <br>
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px; ">Data Type:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <label for="tel " class="form-label fw-bold mt-2" style="font-size: 18px;">Data Rate:</label>
+                        <input class="form-control py-3 round" type="tel " id="tel">
+                        <button class="btn w-100 text-nowrap text-uppercase mt-4 py-3 round" style="background-color: #000088; color: #fff; font-size: 16px;">Place Order</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js "></script>
+
+</body>
+
+</html>
